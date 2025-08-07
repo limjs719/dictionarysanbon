@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>영어 단어장</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>영어 단어장</h1>
+    
+    <div class="search-section">
+      <input type="text" id="wordInput" placeholder="영어 단어를 입력하세요" />
+      <button id="searchBtn">검색</button>
+    </div>
+
+    <div id="wordResult" class="word-result"></div>
+
+    <button id="vocabularyToggleBtn" class="vocabulary-toggle-btn">단어장</button>
+    <button id="quizBtn" class="quiz-btn">퀴즈</button>
+
+    <div id="quizSection" class="quiz-section" style="display: none;">
+      <h2>단어 퀴즈</h2>
+      <div id="quizContent" class="quiz-content"></div>
+    </div>
+
+    <div id="vocabularySection" class="vocabulary-section" style="display: none;">
+      <h2>저장된 단어들</h2>
+      <div id="vocabularyList" class="vocabulary-list"></div>
+      <button id="clearBtn" class="clear-btn">모든 단어 삭제</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
